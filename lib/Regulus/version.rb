@@ -1,0 +1,3 @@
+module Regulus
+  VERSION = "0.0.1"
+end
