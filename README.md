@@ -21,8 +21,9 @@ Or install it yourself as:
 call Regulus and the method for your match
 
 e.g.
-    Regulus.is_email?("some@example.com")
-    => true
+
+	Regulus.is_email?("some@example.com")
+	=> true
 
 ## Contributing
 
