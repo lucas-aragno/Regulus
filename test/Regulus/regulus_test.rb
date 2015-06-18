@@ -33,4 +33,28 @@ describe Regulus do
   it 'shouldn match as US currency' do
     Regulus.is_currency?("$.99").wont_equal true
   end
+
+  it 'should match email' do
+    Regulus.is_email?("test@test.com").must_equal true
+  end
+
+  it 'should match hex number' do
+    Regulus.hex?("#012123").must_equal true
+  end
+
+  it 'should match url' do
+    Regulus.url?("http://google.com").must_equal true
+  end
+
+  it 'should match slug' do
+    Regulus.slug?("my-title-here").must_equal true
+  end
+
+  it 'should match username' do
+    Regulus.is_username?("some-user1").must_equal true
+  end
+
+  it 'should match password' do
+    Regulus.is_password?("suchsecurity").must_equal true
+  end
 end
