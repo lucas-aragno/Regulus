@@ -1,6 +1,6 @@
 # Regulus
 
-TODO: Write a gem description
+Regulus is a gem that wraps some regex to simplify matches
 
 ## Installation
 
@@ -18,7 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+call Regulus and the method for your match
+
+e.g.
+    Regulus.is_email?("some@example.com")
+    => true
 
 ## Contributing
 
